@@ -83,15 +83,15 @@ If you want to rebuild the demo device you can start with following equipment:
 ![Setup](./rpi/img/breadboard.png)
 
 How to wire the LED matrix to the J8 header of a Raspberry Pi is explained in this [wiring diagram](https://github.com/hzeller/rpi-rgb-led-matrix#wiring-diagram)
+If you're not familiar with the J8 pins [this](http://raspi.tv/wp-content/uploads/2014/07/Raspberry-Pi-GPIO-pinouts.png) might help you.
 
 ## Software set-up
 
-Solution is implemented and run with Python. Sources can be found in __./rpi__ folder.
+Solution is implemented and runs with Python. Sources can be found in __./rpi__ folder.
 
 The Python scripts rely on __Python 3.4+__ and meant to run as
-daemons on a Pi. Once started they turn the Pi into an IoT
-edge computing device. What you need is not only a Pi but
-additional periphery connected to it.
+daemons on a Pi. Once started they turn your Pi into an IoT
+edge computing device.
 
 1. Be sure you have the latest __[Raspbian image](https://www.raspbian.org/RaspbianImages)__ on your Pi
 
