@@ -1,5 +1,5 @@
-cert/*/
-!cert/*.*
+rpi/cert/*/
+!rpi/cert/*.*
 target/
 pom.xml.tag
 pom.xml.releaseBackup
