@@ -150,7 +150,7 @@ where *{awsiot_endpoint}* is the account-specific endpoint to you AWS IoT gatewa
 
     -v | --verbose
 
-This will print out runtime information to console. However, you can have a look into __./logs/temperatore.log__
+This will print out runtime information to console. However, you can have a look into __./logs/temperature.log__
 at any time without using verbose argument.
 
 This is an example:
@@ -175,7 +175,7 @@ where *{awsiot_endpoint}* is the account-specific endpoint to you AWS IoT gatewa
 
     -v | --verbose
 
-This will print out runtime information to console. However, you can have a look into __./logs/temperatore.log__
+This will print out runtime information to console. However, you can have a look into __./logs/voting.log__
 at any time without using verbose argument.
 
 This is an example:
