@@ -60,7 +60,7 @@ temperature and humidity of the nearby environment to send it back to
 the voting attendees. The overall solution consists of two lightboxes where
 each of them is dedicated to one of the two options of the voting.
 
-![Lightbox](./rpi/img/lightbox.JPG)
+![Lightbox](./rpi/img/lightbox.png)
 
 ## Physical set-up
 If you want to rebuild the demo device you can start with following equipments:
