@@ -63,7 +63,7 @@ each of them is dedicated to one of the two options of the voting.
 ![Lightbox](./rpi/img/lightbox.png)
 
 ## Physical set-up
-If you want to rebuild the demo device you can start with following equipments:
+If you want to rebuild the demo device you can start with following equipment:
 
 ![Setup](./rpi/img/lightbox-wiring.png)
 
@@ -81,6 +81,8 @@ If you want to rebuild the demo device you can start with following equipments:
 * (L) [Dual USB External Battery, Premium Power Bank High Capacity Most Compact Portable Charger](http://www.amazon.com/HyperGear-16000mAh-External-Capacity-Portable/dp/B0188WLTI8/ref=sr_1_8?ie=UTF8&qid=1464979881&sr=8-8&keywords=powerbank+4.6A) (or similiar)
 
 ![Setup](./rpi/img/breadboard.png)
+
+How to wire the LED matrix to the J8 header of a Raspberry Pi is explained in this [wiring diagram](https://github.com/hzeller/rpi-rgb-led-matrix#wiring-diagram)
 
 ## Software set-up
 
