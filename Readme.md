@@ -60,22 +60,31 @@ temperature and humidity of the nearby environment to send it back to
 the voting attendees. The overall solution consists of two lightboxes where
 each of them is dedicated to one of the two options of the voting.
 
+![Lightbox](./rpi/img/lightbox.JPG)
+
 ## Physical set-up
 If you want to rebuild the demo device you can start with following equipments:
 
-* [32x32 RGB LED Matrix Panel - 6mm pitch](https://www.adafruit.com/products/1484)
-* [Female DC Power adapter - 2.1mm jack to screw terminal block](https://www.adafruit.com/products/368)
-* [USB to 2.1mm Male Barrel Jack Cable - 22AWG & 1 meter](https://www.adafruit.com/products/2697)
-* [Raspberry Pi 3 - Model B - ARMv8 with 1G RAM](https://www.adafruit.com/products/3055)
-* [Half-size breadboard](https://www.adafruit.com/products/64)
-* [USB cable - 6" A/MicroB](https://www.adafruit.com/products/898)
-* [Assembled Pi T-Cobbler Plus - GPIO Breakout - for RasPi A+/B+/Pi 2/Pi 3](https://www.adafruit.com/products/2028)
-* [Pi Model B+ / Pi 2 / Pi 3 Case Base - Clear](https://www.adafruit.com/products/2253)
-* [DHT22 temperature-humidity sensor](https://www.adafruit.com/product/385)
-* [Premium Male/Male Jumper Wires - 20 x 6" (150mm)](https://www.adafruit.com/product/1957)
-* [Dual USB External Battery, Premium Power Bank High Capacity Most Compact Portable Charger](http://www.amazon.com/HyperGear-16000mAh-External-Capacity-Portable/dp/B0188WLTI8/ref=sr_1_8?ie=UTF8&qid=1464979881&sr=8-8&keywords=powerbank+4.6A) (or similiar)
+![Setup](./rpi/img/lightbox-wiring.png)
+
+* (A) [32x32 RGB LED Matrix Panel - 6mm pitch](https://www.adafruit.com/products/1484)
+* (B) [Female DC Power adapter - 2.1mm jack to screw terminal block](https://www.adafruit.com/products/368)
+* (C) [USB to 2.1mm Male Barrel Jack Cable - 22AWG & 1 meter](https://www.adafruit.com/products/2697)
+* (D) [Raspberry Pi 3 - Model B - ARMv8 with 1G RAM](https://www.adafruit.com/products/3055)
+* (E) [Half-size breadboard](https://www.adafruit.com/products/64)
+* (F) [USB cable - 6" A/MicroB](https://www.adafruit.com/products/898)
+* (G) [Assembled Pi T-Cobbler Plus - GPIO Breakout - for RasPi A+/B+/Pi 2/Pi 3](https://www.adafruit.com/products/2028)
+* (H) [Pi Model B+ / Pi 2 / Pi 3 Case Base - Clear](https://www.adafruit.com/products/2253)
+* (I) [DHT22 temperature-humidity sensor](https://www.adafruit.com/product/385)
+* (J) [Premium Male/Male Jumper Wires - 20 x 6" (150mm)](https://www.adafruit.com/product/1957)
+* (K) [Premium Female/Male Jumper Wires - 40 x 6" (150mm)](https://www.adafruit.com/product/826)
+* (L) [Dual USB External Battery, Premium Power Bank High Capacity Most Compact Portable Charger](http://www.amazon.com/HyperGear-16000mAh-External-Capacity-Portable/dp/B0188WLTI8/ref=sr_1_8?ie=UTF8&qid=1464979881&sr=8-8&keywords=powerbank+4.6A) (or similiar)
+
+![Setup](./rpi/img/breadboard.png)
 
 ## Software set-up
+
+Solution is implemented and run with Python. Sources can be found in __./rpi__ folder.
 
 The Python scripts rely on __Python 3.4+__ and meant to run as
 daemons on a Pi. Once started they turn the Pi into an IoT
@@ -104,7 +113,7 @@ Install Python libraries to work with __Adafruit's RGB Matrix__ which is also wi
 You may be faced with an error while building these libraries. See this [Bugfix](https://github.com/Saij/rpi-rgb-led-matrix/commit/d61b537478f418038e9bfdf67ca6932fb0f39fa9) on Github
 
 Now bring the demo code on your Pi
-
+    git clone https://github.com/KayLerch/hadoop-summit-cooltech-voting.git
 
 Go to management console of __AWS IoT__, register a thing and generate __TLS certificates__.
 The certificates you are provided with need to be stored in __./cert__ like this:
