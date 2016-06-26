@@ -112,7 +112,7 @@ additional periphery connected to it.
 
     You may be faced with an error while building these libraries. See this [Bugfix](https://github.com/Saij/rpi-rgb-led-matrix/commit/d61b537478f418038e9bfdf67ca6932fb0f39fa9) on Github
 
-5. Now bring the demo code on your Pi
+5. Now bring the demo code to your Pi
 
         git clone https://github.com/KayLerch/hadoop-summit-cooltech-voting.git
 
