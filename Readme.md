@@ -8,6 +8,7 @@ text over SMS or Twitter which contained a hashtag according to the vote
 and returned environmental sensor-data back to the phone of a participant.
 
 The overall demo consists of several technical components:
+
 1. [Twilio](https://www.twilio.com/) as the SMS provider for sending and receiving SMS to/from the audience.
 2. [Twitter](https://www.twitter.com/) as another inbound channel for receiving votes from the audience. GetTwitter processor of NiFi leverages the Twitter Streaming API to listen on Tweets tagged with *#HadoopSummitDemo*
 3. [Apache NiFi](https://nifi.apache.org/) as the central orchestration tool. The dataflow used for the demo is
@@ -19,6 +20,7 @@ in this Git-Repo (see __./rpi__ folder) along with instructions on how to run it
 6. [AWS IoT](https://aws.amazon.com/iot/) used as the MQTT broker for communicating with the Lightboxes
 
 # Voting dataflow powered by Apache NiFi
+
 1. Install [Apache NiFi](https://nifi.apache.org/) (e.g. on an EC2 instance of AWS)
 It's straightforward.
 2. The demos use custom processors for AWS IoT which are currently not part of the
