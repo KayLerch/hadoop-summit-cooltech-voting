@@ -124,10 +124,9 @@ def drawNumber(num):
     graphics.DrawText(myMatrix, fontLarge, width, 21, white, numstr.encode("utf-8"))
 
     fullThousand = int(num / 1000)
-    if fullThousand >= 1:
-        while fullThousand >= 1:
-            graphics.DrawText(myMatrix, fontSmall, 3 + (3 * (fullThousand - 1)), 6, lightYellow, "|".encode("utf-8"))
-            fullThousand = fullThousand - 1
+    while fullThousand >= 1:
+        graphics.DrawText(myMatrix, fontSmall, 3 + (3 * (fullThousand - 1)), 6, lightYellow, "|".encode("utf-8"))
+        fullThousand = fullThousand - 1
 
 
 def on_message(mqttc, obj, msg):
